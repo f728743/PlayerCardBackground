@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "colorkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Boris-Em/ColorKit",
+      "state" : {
+        "branch" : "master",
+        "revision" : "c0d4e579cef1777975ba5bd9d46e50c40e377c8f"
+      }
+    }
+  ],
+  "version" : 2
+}

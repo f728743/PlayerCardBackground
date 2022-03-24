@@ -11,6 +11,8 @@
 		7C6C91A927EC59B000F8089A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C91A827EC59B000F8089A /* ContentView.swift */; };
 		7C6C91AB27EC59B000F8089A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6C91AA27EC59B000F8089A /* Assets.xcassets */; };
 		7C6C91AE27EC59B000F8089A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6C91AD27EC59B000F8089A /* Preview Assets.xcassets */; };
+		7C6C91B627EC59D900F8089A /* ColorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7C6C91B527EC59D900F8089A /* ColorKit */; };
+		7C6C91B827EC5A0F00F8089A /* GradientEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C91B727EC5A0F00F8089A /* GradientEffectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		7C6C91A827EC59B000F8089A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7C6C91AA27EC59B000F8089A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C6C91AD27EC59B000F8089A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C6C91B727EC5A0F00F8089A /* GradientEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientEffectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C6C91B627EC59D900F8089A /* ColorKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				7C6C91A627EC59B000F8089A /* PlayerCardBackgroundApp.swift */,
 				7C6C91A827EC59B000F8089A /* ContentView.swift */,
+				7C6C91B727EC5A0F00F8089A /* GradientEffectView.swift */,
 				7C6C91AA27EC59B000F8089A /* Assets.xcassets */,
 				7C6C91AC27EC59B000F8089A /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = PlayerCardBackground;
+			packageProductDependencies = (
+				7C6C91B527EC59D900F8089A /* ColorKit */,
+			);
 			productName = PlayerCardBackground;
 			productReference = 7C6C91A327EC59B000F8089A /* PlayerCardBackground.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 7C6C919A27EC59B000F8089A;
+			packageReferences = (
+				7C6C91B427EC59D900F8089A /* XCRemoteSwiftPackageReference "ColorKit" */,
+			);
 			productRefGroup = 7C6C91A427EC59B000F8089A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				7C6C91A927EC59B000F8089A /* ContentView.swift in Sources */,
 				7C6C91A727EC59B000F8089A /* PlayerCardBackgroundApp.swift in Sources */,
+				7C6C91B827EC5A0F00F8089A /* GradientEffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C6C91B427EC59D900F8089A /* XCRemoteSwiftPackageReference "ColorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Boris-Em/ColorKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C6C91B527EC59D900F8089A /* ColorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C6C91B427EC59D900F8089A /* XCRemoteSwiftPackageReference "ColorKit" */;
+			productName = ColorKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7C6C919B27EC59B000F8089A /* Project object */;
 }
